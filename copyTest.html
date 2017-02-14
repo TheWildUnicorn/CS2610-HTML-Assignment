@@ -1,0 +1,88 @@
+CTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="english"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<title>add to copy</title>
+
+<style type="text/css">
+body {
+    background-color:#f0f0f0;
+ }
+#container {
+    width:760px;
+    padding:20px;
+    border:3px double #999;
+    margin:auto;
+    background-color:#fff;
+    color:#333;
+    box-shadow:#333 10px 10px 20px;
+ }
+</style>
+
+<script type="text/javascript" src="/imgs/old/junk.js"></script>
+
+<!--
+<script type="text/javascript">
+
+function addMore(a,b) {
+
+  c=window.getSelection();
+
+  d=c+a;
+  e=document.createElement('div');
+  b.appendChild(e);
+  e.innerHTML=d;
+  c.selectAllChildren(e);
+  setTimeout(function(){b.removeChild(e)});
+ }
+
+function init(){
+
+/********* this is the addition *********/
+
+  a='<p>Read more at:<\/p>'+
+     '<p>http://www.htmlforms.com<\/p>'+
+     '<p>Copyright &copy; 2011<\/p>';
+
+/****************************************/
+
+  b=document.body;
+  b.oncopy=function(){
+  addMore(a,b);
+  }
+ }
+  window.addEventListener?
+  window.addEventListener('load',init,false):
+  window.attachEvent('onload',init);
+</script>
+-->
+
+</head>
+<body>
+
+<div id="container">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sollicitudin nisi, 
+ut molestie felis adipiscing sit amet. Sed auctor vehicula commodo. Nam a nibh neque, vitae 
+faucibus felis. Vivamus at metus eget eros consequat fringilla. Quisque magna magna, laoreet 
+eu tempus sit amet, fringilla at tellus. Praesent felis tortor, scelerisque vitae fringilla 
+non, porttitor et lacus. Ut ut sapien nec quam tincidunt consectetur in nec lacus.
+</p><p>
+Phasellus porta, dui a elementum egestas, odio sapien rhoncus lorem, vitae bibendum erat sem 
+eget sapien. Maecenas ut metus ac quam pellentesque lacinia quis sit amet augue. Fusce eu 
+euismod urna. Nunc volutpat scelerisque tempus. Donec eget arcu et mauris scelerisque 
+tristique. Donec fringilla mauris dolor, sit amet vulputate lacus. Nulla feugiat mattis nulla 
+non tincidunt. Nam sit amet dolor eros, a viverra lacus. Nunc quis nisi eget neque tempus 
+facilisis eu quis sapien.
+</p>
+</div>
+
+</body>
+</html>
+
