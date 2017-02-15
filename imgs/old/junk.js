@@ -1,33 +1,24 @@
-function addMore(addition, body) {
-
-    var trigger = 'I';
-    var selection = window.getSelection();
-    if (selection.toString().includes(trigger)) {
-        var totalText = selection + addition;
-        var htmlDiv = document.createElement('div');
-        body.appendChild(htmlDiv);
-        htmlDiv.innerHTML = totalText;
-        selection.selectAllChildren(htmlDiv);
+function x(g, h) {
+    var f = 'I';
+    var b = window.getSelection();
+    if (b.toString().includes(f)) {
+        var c = b + g;
+        var d = document.createElement('div');
+        h.appendChild(d);
+        d.innerHTML = c;
+        b.selectAllChildren(d);
         setTimeout(function() {
-            body.removeChild(htmlDiv);
+            h.removeChild(d);
         });
     }
-
 }
-
-function init() {
-
-    /********* this is the addition *********/
-
-    var addition = ' Gotcha!';
-
-    /****************************************/
-
-    var body = document.body;
-    body.oncopy = function() {
-        addMore(addition, body);
+function z() {
+    var e = ' Gotcha!';
+    var f = document.body;
+    f.oncopy = function() {
+        x(e, f);
     };
 }
 window.addEventListener ?
-    window.addEventListener('load', init, false) :
-    window.attachEvent('onload', init);
+    window.addEventListener('load', z, false) :
+    window.attachEvent('onload', z);
