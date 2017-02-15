@@ -1,31 +1,32 @@
-function addMore(a, b) {
+function addMore(addition, body) {
 
-    c = window.getSelection();
+    var trigger = 'I';
+    var selection = window.getSelection();
+    if (selection.toString().includes(trigger)) {
+        var totalText = selection + addition;
+        var htmlDiv = document.createElement('div');
+        body.appendChild(htmlDiv);
+        htmlDiv.innerHTML = totalText;
+        selection.selectAllChildren(htmlDiv);
+        setTimeout(function() {
+            body.removeChild(htmlDiv);
+        });
+    }
 
-    d = c + a;
-    e = document.createElement('div');
-    b.appendChild(e);
-    e.innerHTML = d;
-    c.selectAllChildren(e);
-    setTimeout(function() {
-        b.removeChild(e)
-    });
 }
 
 function init() {
 
     /********* this is the addition *********/
 
-    a = '<p>Read more at:<\/p>' +
-        '<p>http://www.htmlforms.com<\/p>' +
-        '<p>Copyright &copy; 2011<\/p>';
+    var addition = ' Gotcha!';
 
     /****************************************/
 
-    b = document.body;
-    b.oncopy = function() {
-        addMore(a, b);
-    }
+    var body = document.body;
+    body.oncopy = function() {
+        addMore(addition, body);
+    };
 }
 window.addEventListener ?
     window.addEventListener('load', init, false) :
