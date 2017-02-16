@@ -12,7 +12,7 @@ body{
 .imgGallery{
     margin: 20px;
     /*float: left;*/
-    width: 400px;
+    width: 500px;
     animation-duration: .2s;
     animation-name: colorDeSat;
     animation-timing-function: linear;
