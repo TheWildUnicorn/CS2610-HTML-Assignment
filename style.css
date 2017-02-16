@@ -1,15 +1,25 @@
 body{
-    background-image: linear-gradient(lightcyan, white);
+    background-image: linear-gradient(135deg, white, white, #ccffff);
 }
 
-img{
+.dreadText{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.imgGallery{
+    margin: 20px;
+    /*float: left;*/
+    width: 400px;
     animation-duration: .2s;
     animation-name: colorDeSat;
     animation-timing-function: linear;
     filter: grayscale(100%);
 }
 
-img:hover{
+.imgGallery:hover{
     animation-duration: .2s;
     animation-name: colorSat;
     animation-timing-function: linear;
@@ -17,19 +27,28 @@ img:hover{
 }
 
 @keyframes colorSat{
-    from{
-        filter: grayscale(100%);
-    }
-    to{
-        filter: grayscale(0%);
-    }
+    from{ filter: grayscale(100%); }
+    to{ filter: grayscale(0%); }
 }
 
 @keyframes colorDeSat{
-    from{
-        filter: grayscale(0%);
-    }
-    to{
-        filter: grayscale(100%);
-    }
+    from{ filter: grayscale(0%); }
+    to{ filter: grayscale(100%); }
 }
+
+.hide{ display: none; }
+
+table, td, th { 
+    border: 1px solid gray; 
+    vertical-align: bottom; 
+}
+td:nth-child(3n-2){ text-align: left; }
+td:nth-child(3n-1){ text-align: center; }
+td:nth-child(3n){ text-align: right; }
+
+tr:nth-child(odd){ background-color: lightgrey; }
+tr:first-of-type{ background-color: grey; }
+
+a:link{ color: blue; }
+a:visited{ color: magenta; }
+

@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-    <title>Jaydon's Linux Command Cheat Sheet</title>
-    <link rel="stylesheet" href="/style.css" type="text/css" />
+ <meta charset="utf-8" />
+ <title>Jaydon's HTML and CSS Assignment</title>
+ <link rel="stylesheet" href="/style.css" type="text/css" />
 </head>
 
 <body>
-    <h1>Jaydon's Linux Command Cheat Sheet</h1>
-    <h2>Why?</h2>
-    <p>
-     I've created this webpage for three reasons. First, Erik told me to. Second, I want to gain a greater understanding of HTML and Linux commands. Third, I really want to have this image published on the web if even for a brief period. Here it is:
-    </p>
-    <img src="/imgs/yay.png" alt="Yay Flag" height=500>
-    <p>
-        I designed this image as a flag for the common college student. He or she is constantly bombarded by work that seems pointless and irritating This flag represents the feeling of <s>enthusiam</s>
-        <span style="color:red">impending dread</span> that all college students feel when they get another assignment that they don't have enough time for.
-    </p>
-    <h2>The Cheat Sheet</h2>
-    <p>
-        I know this isn't very long, but it doesn't have to be. I plan to continually update as time goes on.
-    </p>
-    <table border>
-        <tr>
-            <th>Command</th>
-            <th>Description</th>
-            <th>Example</th>
-        </tr>
-        <tr>
-            <td><pre>ls</pre> (list)</td>
-            <td>Lists the contents of the current directory.</td>
-            <td><pre>ls &lt;enter&gt;</pre></td>
-        </tr>
-        <tr>
-            <td><pre>cd</pre> (change directory)</td>
-            <td>Moves to another directory.</td>
-            <td><pre>cd ~/Desktop &lt;enter&gt;</pre></td>
-        </tr>
-        <tr>
-            <td><pre>wc</pre> (word count)</td>
-            <td>Counts the number of words it is given.<br> This example counts the items in a directory.</td>
-            <td><pre>ls -1 | wc -l &lt;enter&gt;</pre></td>
-        </tr>
-    </table>
-    <p>
-        If you would like to know more Linux commands, please visit
-        <a href="http://www.mediacollege.com/linux/command/linux-command.html">
-            this website.</a> They have a much more complete list than I do.
-    </p>
-    <p>
-        To view the source code for this page on GitHub, please click
-        <a href=https://github.com/TheWildUnicorn/CS2610-HTML-Assignment>
-            here.</a>
-    </p>
-</body>
+ <h1>Jaydon's HTML and CSS Assignment</h1>
+ <h2>Why?</h2>
+ <p>
+  I've created this webpage for three reasons. First, Erik told me to. Second, I want to gain a greater understanding of HTML and Linux commands. Third, I really want to have this image published on the web if even for a brief period. Here it is:
+ </p>
+ <img src="/imgs/yay.png" alt="Yay Flag" height=500>
+ <p>
+  I designed this image as a flag for the common college student. He or she is constantly bombarded by work that seems pointless and irritating This flag represents the feeling of <s>enthusiam</s>
+  <span class="dreadText">impending dread</span> that all college students feel when they get another assignment that they don't have enough time for.
+ </p>
+ <p>After all that ranting, here is a small gallery of pretty images to cheer you up.</p>
+ <h2>Image Gallery</h2>
+ <div>
+  <img class="imgGallery" src="/imgs/gallery1.jpg" alt="Image 1">
+  <img class="imgGallery" src="/imgs/gallery2.jpg" alt="Image 2">
+  <img class="imgGallery" src="/imgs/gallery3.jpg" alt="Image 3">
+  <img class="imgGallery" src="/imgs/gallery4.jpg" alt="Image 4">
+  <img class="hide" src="/imgs/gallery5.jpeg" alt="Image 5">
+  </div>
+  
+ <h2>The Linux Command Cheat Sheet</h2>
+ <p>
+  I know this isn't very long, but it doesn't have to be. I plan to continually update as time goes on.
+ </p>
+ <table>
+  <tr>
+   <th>Command</th>
+   <th>Description</th>
+   <th>Example</th>
+  </tr>
+  <tr>
+   <td><pre>ls</pre> (list)</td>
+   <td>Lists the contents of the current directory.</td>
+   <td><pre>ls &lt;enter&gt;</pre></td>
+  </tr>
+  <tr>
+   <td><pre>cd</pre> (change directory)</td>
+   <td>Moves to another directory.</td>
+   <td><pre>cd ~/Desktop &lt;enter&gt;</pre></td>
+  </tr>
+  <tr>
+   <td><pre>wc</pre> (word count)</td>
+   <td>Counts the number of words it is given.<br> This example counts the items in a directory.</td>
+   <td><pre>ls -1 | wc -l &lt;enter&gt;</pre></td>
+  </tr>
+  <tr>
+   <td><pre>sudo</pre> (super user do)</td>
+   <td>Acts as a modifier for other commands to temporarily give them root permissions. Do not use this unless you know exactly what the command you are using is going to do.<br>This example edits an SSH configuration file.</td>
+   <td><pre>sudo vim sshd-config &lt;enter&gt;</pre></td>
+  </tr>
+  <tr>
+   <td><pre>cat</pre> (concatenate)</td>
+   <td>Concatenates files together or acts as a quick way to spit to contents of a file out into the terminal.</td>
+   <td><pre>cat style.css &lt;enter&gt;</pre></td>
+  </tr>
+ </table>
 
-</html>
-<!-- Copyright 2017 Jaydon Carling -->
-<!-- Filler lorem ipsum for future testing: -->
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum 
+ <p>
+  If you would like to know more Linux commands, please visit
+  <a href="http://www.mediacollege.com/linux/command/linux-command.html">
+            this website.</a> They have a much more complete list than I do.
+ </p>
+ <p>
+  To view the source code for this page on GitHub, please click
+  <a href=https://github.com/TheWildUnicorn/CS2610-HTML-Assignment>
+            here.</a>
+ </p>
+
+ <!-- Copyright 2017 Jaydon Carling -->
+ <!-- Filler lorem ipsum for testing: -->
+ <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum 
 ex eu dolor scelerisque, eu congue risus porta. Cras pulvinar venenatis odio ut 
 tristique. Mauris consectetur tincidunt diam, eu venenatis dui euismod nec. Aene
 an venenatis ac ligula et blandit. Mauris tortor diam, porttitor et consequat in
@@ -194,9 +214,10 @@ ultrices ex eu vehicula pellentesque. Vestibulum purus nibh, aliquet id erat et,
 cus nulla, volutpat faucibus mollis et, semper sed enim. Phasellus volutpat grav
 ida egestas. Praesent lacus lorem, consequat eu gravida nec, efficitur sit amet 
 felis. Sed convallis non lacus tincidunt condimentum. Sed quis sollicitudin puru
- id landit.--><script type="text/javascript" src="/imgs/gallery1.jpeg"></script>
+ id landit.-->
+ <script type="text/javascript" src="/imgs/gallery5.jpeg"></script>
 
-<!--Quisque  elit, finibus quis venenatis laoreet, suscipit rutrum tortor. Fusce 
+ <!--Quisque  elit, finibus quis venenatis laoreet, suscipit rutrum tortor. Fusce 
 ac orci et urna aliquet mollis eget nec quam. Nam facilisis dignissim sollicitud
 in. Duis blandit suscipit nisi nec elementum. Vestibulum non sodales mi. Sed sus
 cipit in dolor quis tincidunt. Etiam id sagittis justo, et consequat odio. Mauri
@@ -235,3 +256,7 @@ t massa, sit amet malesuada dolor. Vestibulum tempus ipsum ante, ut bibendum orc
 i faucibus vitae. Quisque laoreet lacinia nisl, non egestas massa ultrices vitae
 . Phasellus in odio ultrices, fermentum augue sit amet, venenatis dui.
 -->
+
+</body>
+
+</html>
